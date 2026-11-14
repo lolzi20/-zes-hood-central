@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0712">
+  <title>Zes Hood Central</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div id="particles" aria-hidden="true"></div>
+  <div class="announcement"><span class="announcement-dot"></span> W1R AND SUMMER RUN REMAKES ONG <span class="announcement-dot"></span></div>
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">Z</span><span>ZES <strong>HOOD</strong><small>CENTRAL</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="navigation" aria-label="Main navigation">
+      <a class="nav-link active" data-page="home" href="#home">Home</a>
+      <a class="nav-link" data-page="leaderboards" href="#leaderboards">Leaderboards</a>
+      <a class="nav-link" data-page="staff" href="#staff">Staff</a>
+      <a class="nav-link" data-page="shop" href="#shop">Shop</a>
+    </nav>
+    <button class="btn btn-small btn-outline header-join" id="discordButton">JOIN DISCORD ↗</button>
+  </header>
+  <main>
+    <section class="page active" id="home">
+      <div class="hero wrap">
+        <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> THE OFFICIAL COMMUNITY HUB</div>
+          <h1>RULE THE <span>STREETS.</span></h1>
+          <p>Your place for Zes Hood news, community rankings, the staff team and more. Welcome to the next era.</p>
+          <div class="hero-actions"><button class="btn btn-primary" id="playButton">PLAY ZES HOOD ↗</button><button class="btn btn-outline" id="heroDiscord">JOIN COMMUNITY ↗</button></div>
+          <div class="hero-note">BUILT FOR THE COMMUNITY. POWERED BY THE STREETS.</div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="hero-z">Z</div><div class="hero-art-label">ZES HOOD <span>EST. COMMUNITY</span></div></div>
+      </div>
+      <div class="stats wrap"><div><strong>01</strong><span>COMMUNITY HUB</span></div><div><strong>24/7</strong><span>COMMUNITY ACCESS</span></div><div><strong>07</strong><span>FEATURED STAFF</span></div><div><strong>∞</strong><span>THE POSSIBILITIES</span></div></div>
+      <div class="marquee"><div>W1R AND SUMMER RUN REMAKES ONG ✦ ZES HOOD CENTRAL ✦ RULE THE STREETS ✦ W1R AND SUMMER RUN REMAKES ONG ✦</div></div>
+      <section class="home-section wrap"><div class="section-label">01 / EXPLORE THE HUB</div><h2>YOUR WORLD. <span>YOUR RULES.</span></h2><p class="section-intro">Everything Zes Hood, all in one place.</p>
+        <div class="feature-grid"><a class="feature-card" href="#leaderboards"><span class="feature-symbol">♛</span><span class="feature-number">01 / RANKINGS</span><h3>LEADERBOARDS</h3><p>Explore the rankings and join the leaderboard community.</p><span class="card-arrow">EXPLORE ↗</span></a><a class="feature-card" href="#staff"><span class="feature-symbol">✦</span><span class="feature-number">02 / THE TEAM</span><h3>MEET THE STAFF</h3><p>Get to know the people behind the community.</p><span class="card-arrow">MEET THE TEAM ↗</span></a><a class="feature-card" href="#shop"><span class="feature-symbol">◇</span><span class="feature-number">03 / EXCLUSIVES</span><h3>ZES SHOP</h3><p>Find the dedicated Zes Hood Shop Discord.</p><span class="card-arrow">VISIT SHOP ↗</span></a></div>
+      </section>
+      <section class="community-banner wrap"><div><div class="section-label">COMMUNITY ANNOUNCEMENT</div><h2>W1R AND SUMMER RUN<br><span>REMAKES ONG.</span></h2><p>Stay connected with what's next for Zes Hood.</p></div><button class="btn btn-primary" id="bannerDiscord">JOIN THE COMMUNITY ↗</button></section>
+      <section class="bottom-cta wrap"><div class="section-label">READY TO JOIN?</div><h2>THE STREETS <span>ARE CALLING.</span></h2><button class="btn btn-primary" id="bottomPlay">PLAY ZES HOOD ↗</button></section>
+    </section>
+    <section class="page inner-page wrap" id="leaderboards"><div class="section-label">02 / THE RANKINGS</div><h1 class="inner-title">THE <span>LEADERBOARDS.</span></h1><p class="inner-description">See the community rankings and connect with the Zes Leaderboards Discord.</p>
+      <div class="discord-banner"><div class="discord-icon">♛</div><div><div class="mini-label">OFFICIAL COMMUNITY LINK</div><h2>ZES LEADERBOARDS</h2><p>Join the leaderboard Discord server.</p></div><button class="btn btn-primary" id="leaderboardDiscordButton">JOIN LEADERBOARD DISCORD ↗</button></div>
+      <div class="panel"><div class="panel-header"><h3>PLAYER RANKINGS</h3><span class="demo-pill">DEMO DATA</span></div><div class="filters"><input id="playerSearch" type="search" placeholder="Search players..." aria-label="Search players"><select id="sortPlayers" aria-label="Sort leaderboard"><option value="wins">Most wins</option><option value="kills">Most kills</option><option value="streak">Best streak</option></select></div><div class="table-scroll"><table><thead><tr><th>RANK</th><th>PLAYER</th><th>WINS</th><th>KILLS</th><th>STREAK</th></tr></thead><tbody id="leaderboardBody"></tbody></table></div><p class="small-note">These are example rankings, not live Roblox statistics.</p></div>
+    </section>
+    <section class="page inner-page wrap" id="staff"><div class="section-label">03 / THE PEOPLE BEHIND ZES</div><h1 class="inner-title">MEET THE <span>TEAM.</span></h1><p class="inner-description">The people keeping Zes Hood moving. Browse the leadership team and find staff by name or rank.</p>
+      <div class="staff-spotlight"><div><div class="mini-label">THE ZES HOOD TEAM</div><h2>BUILT BY THE <span>COMMUNITY.</span></h2><p>Leadership, management and moderation — all in one place.</p></div><div class="spotlight-count"><strong id="staffCount">07</strong><span>FEATURED STAFF</span></div></div>
+      <div class="staff-controls"><label class="search-wrap"><span>⌕</span><input id="staffSearch" type="search" placeholder="Search staff members..." aria-label="Search staff members"></label><select id="staffFilter" aria-label="Filter staff rank"><option value="all">All ranks</option></select></div>
+      <div id="staffGrid" class="staff-sections"></div><p class="small-note">Discord-style initials are placeholders for profile pictures. Additional HR, Administrator and In-Game Mod profiles can be added later.</p>
+    </section>
+    <section class="page inner-page wrap" id="shop"><div class="section-label">04 / THE EXCLUSIVES</div><h1 class="inner-title">ZES HOOD <span>SHOP.</span></h1><p class="inner-description">Your destination for the Zes Hood Shop community.</p><div class="shop-feature"><div class="shop-glyph">◇</div><div class="mini-label">COMMUNITY SHOP</div><h2>THE ZES SHOP.</h2><p>Head over to the Zes Shop Discord to browse the community shop and its latest information.</p><button class="btn btn-primary" id="shopDiscordButton">JOIN ZES HOOD SHOP ↗</button><p class="small-note">Only use trusted links and never share your Roblox or Discord password.</p></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><div class="footer-brand">ZES <span>HOOD</span> CENTRAL</div><p>Made for the community. © <span id="year"></span> Zes Hood Central.</p><a href="#home">BACK TO TOP ↑</a></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
